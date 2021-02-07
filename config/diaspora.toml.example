@@ -140,7 +140,7 @@
 #upload = false
 
 ## Specify an asset host. Ensure it does not have a trailing slash (/).
-#host = "http://cdn.example.org/diaspora"
+#host = "https://cdn.example.org/diaspora"
 
 ## Logger configuration
 [configuration.environment.logging]

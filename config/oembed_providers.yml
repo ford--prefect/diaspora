@@ -15,7 +15,7 @@ twitter:
     - https://twitter.com/*/status/*
 
 mixcloud:
-  endpoint: "http://www.mixcloud.com/oembed/"
+  endpoint: "https://www.mixcloud.com/oembed/"
   urls:
     - http://www.mixcloud.com/*/*
     - https://www.mixcloud.com/*/*

@@ -5,8 +5,8 @@
 #   the COPYRIGHT file.
 
 #For Guidance
-#http://github.com/thoughtbot/factory_girl
-# http://railscasts.com/episodes/158-factories-not-fixtures
+#https://github.com/thoughtbot/factory_girl
+# https://railscasts.com/episodes/158-factories-not-fixtures
 
 def r_str
   SecureRandom.hex(3)

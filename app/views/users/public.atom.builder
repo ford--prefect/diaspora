@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-atom_feed("xmlns:thr"       => "http://purl.org/syndication/thread/1.0",
-          "xmlns:georss"    => "http://www.georss.org/georss",
-          "xmlns:activity"  => "http://activitystrea.ms/spec/1.0/",
+atom_feed("xmlns:thr"       => "https://purl.org/syndication/thread/1.0",
+          "xmlns:georss"    => "https://www.georss.org/georss",
+          "xmlns:activity"  => "https://activitystrea.ms/specs/json/schema/activity-schema.html",
           "xmlns:media"     => "http://purl.org/syndication/atommedia",
           "xmlns:poco"      => "http://portablecontacts.net/spec/1.0",
           "xmlns:ostatus"   => "http://ostatus.org/schema/1.0",
@@ -29,8 +29,8 @@ atom_feed("xmlns:thr"       => "http://purl.org/syndication/thread/1.0",
       entry.content post.message.markdownified(disable_hovercards: true), :type => 'html'
       add_activitystreams_author(entry, post.author)
 
-      entry.tag! 'activity:verb', 'http://activitystrea.ms/schema/1.0/post'
-      entry.tag! 'activity:object-type', 'http://activitystrea.ms/schema/1.0/note'
+      entry.tag! 'activity:verb', 'https://activitystrea.ms/specs/json/schema/activity-schema.html#verbs'
+      entry.tag! 'activity:object-type', 'https://activitystrea.ms/specs/json/schema/activity-schema.html#object-types'
     end
   end
 end

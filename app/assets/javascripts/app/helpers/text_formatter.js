@@ -27,7 +27,7 @@
     md.use(inlinePlugin, "link_new_window_and_missing_http", "link_open", function (tokens, idx) {
       tokens[idx].attrs.forEach(function(attribute, index, array) {
         if( attribute[0] === "href" ) {
-          array[index][1] = attribute[1].replace(/^www\./, "http://www.");
+          array[index][1] = attribute[1].replace(/^www\./, "https://www.");
         }
       });
       tokens[idx].attrPush(["target", "_blank"]);
